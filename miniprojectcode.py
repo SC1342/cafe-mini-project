@@ -4,7 +4,6 @@ product_list = []
 couriers_list = []
 orders_list = []
 
-
 order_status = ["PREPARING", "DISPATCHED", "DELIVERED"]
 order_properties = ["customer_name", "customer_address", "customer_phone","courier", "status", "items"]
 
@@ -14,13 +13,11 @@ with open("products.csv", "r") as p:
     for product in p_reader:
         product_list.append(product)
 
-
 # Loading Couriers List
 with open("couriers.csv", "r") as c:
     c_reader = csv.DictReader(c, delimiter=",")
     for courier in c_reader:
         couriers_list.append(courier)
-
 
 # loading Orders list
 with open("orders.csv", "r") as o:
@@ -149,7 +146,13 @@ def couriers():
 # Create new courier
 def create_courier():
     courier_name = input("Enter name of courier\n")
+    if name_check(courier_name):
+        print("Please enter a valid name")
+        create_courier()
     courier_number = input("Enter phone number of courier\n")
+    if num_check(courier_number):
+        print("Please enter a valid phone number")
+        create_courier()
 
     couriers_list.append({"name" : courier_name, "phone" : courier_number})
     print(f"New couriers list:\n {couriers_list}")
@@ -223,8 +226,14 @@ def orders():
 #create order
 def create_order():
     customer_name = input("Type your name\n")
+    if name_check(customer_name):
+        print("Please enter a valid name")
+        create_courier()
     customer_address = input("Type your address\n")
     customer_phone = input("Type your phone number\n")
+    if num_check(customer_name):
+        print("Please enter a valid phone number")
+        create_order()
 
     # Choosing Product
     product_choices = []
@@ -318,6 +327,20 @@ def delete_order():
     print(f"Your new order list: {orders_list}")
     
     main_menu()
+
+# checks for a valid name
+def name_check(name):
+    if name == "":
+        return True
+    elif any(i.isdigit() for i in name):
+        return True
+        
+# checks for valid phone number
+def num_check(number):
+    if not number.isdigit():
+        return True
+    elif len(number) != 11:
+        return True
 
 # saves all products, couriers, and orders data to csv files
 def save_data():
