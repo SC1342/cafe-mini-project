@@ -1,11 +1,6 @@
 # cafe-mini-project
-The client is a pop up cafe selling various products requiring a software application in order to manage their products, couriers and incoming orders.
 
-This python application will allow the client to display, add, update and delete their products, couriers and incoming orders. The data is saved in CSV files.
-Testing (in particular unit testing) and data validation was employed to guarantee the client requirements
-
-With more time, there is future room to expand this project to be linked to a database as our client expands their business as well as adding additional functionality to add stock levels to their products and assert that their is enough product stock for incoming orders, as well as checking the availability of couriers etc. 
-One would guarantee these new client requirements via more testing, in particular integration testing (with the database) as well as data validation checks such as the aforementioned with regards to stock levels.
+This python application will allow the client to display, add, update and delete their products, couriers and incoming orders.
 
 
 <!-- TABLE OF CONTENTS -->
@@ -63,9 +58,11 @@ Various data validation checks as well as some unit testing was used ensuring th
 <!-- PLANS FOR FUTURE IMPLEMENTATION -->
 ## Plans for future implementation
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+With more time, there is future room to expand this project to be linked to a database as our client expands their business as well as adding additional functionality to add stock levels to their products and assert that their is enough product stock for incoming orders alongside asserting the availability of couriers etc.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+Moreover, more testing such as unit testing would be employed on all of the functions of the application in order to guarantee the client requirements. In particular integration testing would be employed after having updated to a database.
+
+Finally, I would consider refactoring and taking an object-orientated approach. This may make the process of refactoring the code to implement the use of a database much more feasible.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
