@@ -14,12 +14,9 @@ One would guarantee these new client requirements via more testing, in particula
   <ol>
     <li>
       <a href="#client-specifications">Client Specifications</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#design-specifications">Design Specifications</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
@@ -54,36 +51,20 @@ The client is a pop up cafe selling various products requiring a software applic
 * Update details about an existing order
 * Delete an existing order
  
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+In addition to this, the client required me to persist/save the data and any changes made everytime they exited the application as well as loading all previous data when starting the application.
 
-Use the `BLANK_README.md` to get started.
+<!-- Design Specifications -->
+## Design Specifications
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+A functional orientated approach was taken. Functions were designed to carry out each client specification in order to avoid repeating code. Due to the client changing their specifications every week the use of functions preserved readability of the code making it easier to refactor in order to meet the updated requirements.
 
+A main-menu function was used allowing the client to navigate through to the products, couriers, or orders menu which were themselves functions allowing the client to decide what action they wanted to carry out within each of those 3 menus. These actions of viewing, adding, updating, and deleting products, orders, and couriers were themselves functions. This logical use of functions in line with the client requirements allowed for clean code and easier readability which will be beneficial for other collaborators wanting to add software updates to the application in the future.
 
+The data for products, couriers, and orders is loaded from CSV files everytime the application starts. When the client decides to exit the application, all of the data including any changes made to the data are saved in CSV files. This ensures data persistance in the application.
 
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Various data validation checks as well as some unit testing was used ensuring the client's requirements were met and guaranteed. If the client is mistaken when entering key data such as the name of a courier or the phone number of their customer which is likely to occur due to human limitations, then the application will inform the client and prompt them. This was done in the use of try-except blocks as well as with the use of other means of boolean logic. Some unit tests were carried out on functions in the products, couriers, and orders menu.  
 
 
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
