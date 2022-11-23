@@ -64,10 +64,6 @@ Moreover, more testing such as unit testing would be employed on all of the func
 
 Finally, I would consider refactoring and taking an object-orientated approach. This may make the process of refactoring the code to implement the use of a database much more feasible.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- ROADMAP -->
 ## Roadmap
 
