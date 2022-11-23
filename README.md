@@ -58,9 +58,9 @@ Various data validation checks as well as some unit testing was used ensuring th
 <!-- PLANS FOR FUTURE IMPLEMENTATION -->
 ## Plans for future implementation
 
-With more time, there is future room to expand this project to be linked to a database as our client expands their business as well as adding additional functionality to add stock levels to their products and assert that their is enough product stock for incoming orders alongside asserting the availability of couriers etc.
+Given more time, there is future room to expand this project to be linked to a database as our client expands their business as well as adding additional functionality to add stock levels to their products and assert that their is enough product stock for incoming orders alongside asserting the availability of couriers etc.
 
-Moreover, more testing such as unit testing would be employed on all of the functions of the application in order to guarantee the client requirements. In particular integration testing would be employed after having updated to a database.
+Moreover, with additional time, then more testing such as unit testing would be employed on all of the functions of the application in order to guarantee the client requirements. In particular integration testing would be employed after having updated to a SQL database.
 
 Finally, I would consider refactoring and taking an object-orientated approach. This may make the process of refactoring the code to implement the use of a database much more feasible.
 
