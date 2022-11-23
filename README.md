@@ -36,7 +36,7 @@ One would guarantee these new client requirements via more testing, in particula
 
 
 
-<!-- ABOUT THE PROJECT -->
+<!-- CLIENT SPECIFICATIONS -->
 ## Client Specifications
 The client is a pop up cafe selling various products requiring a software application in order to:
 * View their products list
