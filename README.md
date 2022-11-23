@@ -17,12 +17,8 @@ One would guarantee these new client requirements via more testing, in particula
     </li>
     <li>
       <a href="#design-specifications">Design Specifications</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#plans-for-future-implmentation">Plans for future implementation</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -62,42 +58,10 @@ A main-menu function was used allowing the client to navigate through to the pro
 
 The data for products, couriers, and orders is loaded from CSV files everytime the application starts. When the client decides to exit the application, all of the data including any changes made to the data are saved in CSV files. This ensures data persistance in the application.
 
-Various data validation checks as well as some unit testing was used ensuring the client's requirements were met and guaranteed. If the client is mistaken when entering key data such as the name of a courier or the phone number of their customer which is likely to occur due to human limitations, then the application will inform the client and prompt them. This was done in the use of try-except blocks as well as with the use of other means of boolean logic. Some unit tests were carried out on functions in the products, couriers, and orders menu.  
+Various data validation checks as well as some unit testing was used ensuring the client's requirements were met and guaranteed. If the client is mistaken when entering key data such as the name of a courier or the phone number of their customer which is likely to occur due to human limitations, then the application will prompt the user. This was done using try-except blocks as well as with the use of other means of boolean logic. Some unit tests were carried out on functions in the products, couriers, and orders menu.
 
-
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
+<!-- PLANS FOR FUTURE IMPLEMENTATION -->
+## Plans for future implementation
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
@@ -165,6 +129,6 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Patrick
+Patrick Cando
 
 Numan Mahmood
